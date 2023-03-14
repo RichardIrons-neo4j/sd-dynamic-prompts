@@ -60,7 +60,7 @@ def get_prompts(p):
     return original_prompt, original_negative_prompt
 
 
-device = 0 if get_optimal_device() == "cuda" else -1
+device = get_optimal_device()
 
 
 def generate_prompts(
